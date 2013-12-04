@@ -3,8 +3,8 @@
 /**
  * @Name: consultar DGII 
  * @author :Jose Ramon De Los Santos Oviedo
- * @version: 0.0.1
- * @date : 2013-11-02 
+ * @version: 0.0.3
+ * @date : 2013-11-02
  *
  **/
 class Rnc
