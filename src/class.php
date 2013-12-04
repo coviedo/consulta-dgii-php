@@ -44,7 +44,7 @@ class Rnc
 		curl_close($ch);
 
 		if($httpStatus != 200)
-			die('No se efectuo la conexión');
+			die($this->_dataJson{'http_error_string'});
 
 		$dom = new DomDocument();
 		$dom->loadHtml($schemeHtml);
@@ -53,7 +53,7 @@ class Rnc
 		$tr = $xpath->query('//span[@id="lblMsg"]')->item(0);
 
 		if ($tr->textContent)
-			die($tr->textContent);
+			die($this->_dataJson{'not_found_string'});
 
 		$tr = $xpath->query('//tr[@class="GridItemStyle"]')->item(0);
 
