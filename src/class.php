@@ -71,7 +71,7 @@ class Rnc
 
 	public function queryDoc($doc)
 	{
-		$this->_dataJson['request_parameters']['txtRncCed'] = $doc;
+		$this->_dataJson{'request_parameters'}{'txtRncCed'} = $doc;
 		return $this->_getResource();
 	}
 }
