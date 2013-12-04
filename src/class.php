@@ -49,8 +49,11 @@ class Rnc
 		foreach ($tr->childNodes as $d) {
 			$rncValue[] = $d->nodeValue;
 		}
-
-		header('Content-type: application/json');
+		
+		if (!headers_sent()) {
+			header('Content-type: application/json');
+		}
+		
 		array_pop($rncValue);
 		return json_encode($rncValue, JSON_FORCE_OBJECT);
 		
