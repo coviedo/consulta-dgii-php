@@ -8,7 +8,7 @@
  **/
 class Rnc
 {
-	private $_fileName = 'config.json';
+	private $_fileName = 'src/config.json';
 	private $_dataJson;
 	const URL = 'http://www.dgii.gov.do/app/WebApps/Consultas/rnc/RncWeb.aspx';
 
